@@ -17,9 +17,7 @@ gem "pundit"
 
 # Design gem
 gem "font-awesome-rails"
-gem "bourbon"
-gem "neat"
-gem "refills"
+gem 'bootstrap', '~> 4.4.1'
 
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
