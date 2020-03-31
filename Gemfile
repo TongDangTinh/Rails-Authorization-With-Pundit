@@ -39,11 +39,7 @@ group :development do
 end
 
 group :test do
-  gem "rspec-rails"
-  gem "factory_girl_rails"
   gem "capybara", ">= 2.15"
-  gem "database_cleaner"
-  gem "shoulda-matchers"
   gem "selenium-webdriver"
   gem "chromedriver-helper"
 end
