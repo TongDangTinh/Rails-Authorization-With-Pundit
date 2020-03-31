@@ -9,6 +9,18 @@ gem "puma", "~> 3.11"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 
+# New gems
+gem "devise"
+gem "jquery-rails"
+gem "faker"
+gem "pundit"
+
+# Design gem
+gem "font-awesome-rails"
+gem "bourbon"
+gem "neat"
+gem "refills"
+
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
@@ -27,7 +39,11 @@ group :development do
 end
 
 group :test do
+  gem "rspec-rails"
+  gem "factory_girl_rails"
   gem "capybara", ">= 2.15"
+  gem "database_cleaner"
+  gem "shoulda-matchers"
   gem "selenium-webdriver"
   gem "chromedriver-helper"
 end
