@@ -12,14 +12,6 @@ class UsersController < ApplicationController
     authorize @user
   end
 
-  def destroy
-    @user = User.find params[:id]
-    authorize user
-    @user.destroy
-    flash[:success] = "User deleted!"
-    redirect_to users_path
-  end
-
   def update
     @user = User.find params[:id]
     authorize @user 
@@ -31,6 +23,14 @@ class UsersController < ApplicationController
       flash[:alert] = "Unable to update user"
       redirect_to users_path
     end
+  end
+
+  def destroy
+    @user = User.find params[:id]
+    authorize @user
+    @user.destroy
+    flash[:success] = "User deleted!"
+    redirect_to users_path
   end
 
   private 
