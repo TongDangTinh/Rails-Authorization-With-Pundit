@@ -9,6 +9,16 @@ gem "puma", "~> 3.11"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 
+# New gems
+gem "devise"
+gem "jquery-rails"
+gem "faker"
+gem "pundit"
+
+# Design gem
+gem "font-awesome-rails"
+gem 'bootstrap', '~> 4.4.1'
+
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
